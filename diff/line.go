@@ -15,12 +15,15 @@ type LineMode int
 
 // Line diff行
 type Line struct {
-	Mode   LineMode `json:"mode,omitempty"`   // 行变动类型
-	Number int32    `json:"number,omitempty"` // 行号
+	Mode    LineMode `json:"mode,omitempty"`    // 行变动类型
+	Number  int32    `json:"number,omitempty"`  // 行号
+	Content string   `json:"content,omitempty"` // 内容
 }
 
 // LineMode 设置行变动类型
 func (l *Line) LineMode(diffLine string) {
+	l.Content = diffLine[1:]
+
 	if len(diffLine) < 1 {
 		l.Mode = LineUnchanged
 		return

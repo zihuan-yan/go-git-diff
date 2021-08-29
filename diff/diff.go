@@ -10,7 +10,7 @@ import (
 const (
 	FileDeleted  FileMode = 1 // 删除
 	FileModified FileMode = 2 // 修改
-	FileInserted FileMode = 3 //新增
+	FileInserted FileMode = 3 // 新增
 )
 
 // FileMode 文件变动模式
