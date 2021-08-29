@@ -9,7 +9,7 @@ A tool for developer to parse output of git diff command.
 ## Example
 
 ```go
-package amin
+package main
 
 import (
 	"github.com/lower-coder/go-git-diff/diff"
@@ -30,6 +30,93 @@ func main() {
 	d := diff.NewDiff()
 	d.Parse(diffText)
 }
+
+/*
+{
+  "files": [
+    {
+      "mode": 2,
+      "input": {
+        "source": "a/file1",
+        "target": "b/file1"
+      },
+      "metas": [
+        {
+          "meta_type": "index",
+          "content": "504d2a1..50ccec3 100644"
+        }
+      ],
+      "legends": [
+        {
+          "mark": "---",
+          "content": "a/file1"
+        },
+        {
+          "mark": "+++",
+          "content": "b/file1"
+        }
+      ],
+      "chunks": [
+        {
+          "Header": "",
+          "SourceRange": {
+            "Start": 1,
+            "Length": 4,
+            "Lines": [
+              {
+                "mode": 1,
+                "number": 1,
+                "content": "some"
+              },
+              {
+                "mode": 1,
+                "number": 2,
+                "content": "lines"
+              },
+              {
+                "mode": 3,
+                "number": 3,
+                "content": "in"
+              },
+              {
+                "mode": 1,
+                "number": 4,
+                "content": "file1"
+              }
+            ]
+          },
+          "TargetRange": {
+            "Start": 1,
+            "Length": 4,
+            "Lines": [
+              {
+                "mode": 2,
+                "number": 1,
+                "content": "add a line"
+              },
+              {
+                "mode": 1,
+                "number": 2,
+                "content": "some"
+              },
+              {
+                "mode": 1,
+                "number": 3,
+                "content": "lines"
+              },
+              {
+                "mode": 1,
+                "number": 4,
+                "content": "file1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+*/
 ```
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/lower-coder/go-git-diff)](https://goreportcard.com/report/github.com/lower-coder/go-git-diff)
