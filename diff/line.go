@@ -22,12 +22,12 @@ type Line struct {
 
 // LineMode 设置行变动类型
 func (l *Line) LineMode(diffLine string) {
-	l.Content = diffLine[1:]
-
 	if len(diffLine) < 1 {
 		l.Mode = LineUnchanged
 		return
 	}
+
+	l.Content = diffLine[1:]
 
 	switch diffLine[:1] {
 	case InsertPrefix:
