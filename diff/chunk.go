@@ -15,16 +15,16 @@ const (
 
 // Chunk diff块
 type Chunk struct {
-	Header      string // 块头部
-	SourceRange *Range // 源文件行范围
-	TargetRange *Range // 目标文件行范围
+	Header      string `json:"header,omitempty"`       // 块头部
+	SourceRange *Range `json:"source_range,omitempty"` // 源文件行范围
+	TargetRange *Range `json:"target_range,omitempty"` // 目标文件行范围
 }
 
 // Range 行范围
 type Range struct {
-	Start  int32   // 起始行号
-	Length int32   // 范围长度
-	Lines  []*Line // 行列表
+	Start  int32   `json:"start,omitempty"`  // 起始行号
+	Length int32   `json:"length,omitempty"` // 范围长度
+	Lines  []*Line `json:"lines,omitempty"`  // 行列表
 }
 
 // NewChunk 创建diff块实例

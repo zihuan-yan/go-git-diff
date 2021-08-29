@@ -58,11 +58,10 @@ func main() {
       ],
       "chunks": [
         {
-          "Header": "",
-          "SourceRange": {
-            "Start": 1,
-            "Length": 4,
-            "Lines": [
+          "source_range": {
+            "start": 1,
+            "length": 4,
+            "lines": [
               {
                 "mode": 1,
                 "number": 1,
@@ -85,10 +84,10 @@ func main() {
               }
             ]
           },
-          "TargetRange": {
-            "Start": 1,
-            "Length": 4,
-            "Lines": [
+          "target_range": {
+            "start": 1,
+            "length": 4,
+            "lines": [
               {
                 "mode": 2,
                 "number": 1,
