@@ -1,16 +1,17 @@
-// Package internal 正则表达式
+// Package internal regexp.go
 package internal
 
 import "regexp"
 
+// regexpT is a regexp template struct.
 type regexpT struct {
 	ChunkRegexp *regexp.Regexp
 }
 
-// RegexpT 正则表达式模版
+// RegexpT is a regexp template struct.
 var RegexpT *regexpT
 
-// InitRegexpT 初始化正则表达式模板
+// InitRegexpT init regexp template.
 func InitRegexpT() {
 	RegexpT = &regexpT{}
 

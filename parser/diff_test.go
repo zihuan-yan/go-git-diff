@@ -1,5 +1,5 @@
-// Package diff 模块说明
-package diff
+// Package parser 模块说明
+package parser
 
 import (
 	"encoding/json"

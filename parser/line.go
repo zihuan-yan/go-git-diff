@@ -1,5 +1,5 @@
-// Package diff diff行
-package diff
+// Package parser diff行
+package parser
 
 const (
 	InsertPrefix = "+" // 新增行前缀

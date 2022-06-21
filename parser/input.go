@@ -1,5 +1,5 @@
-// Package diff 输入数据源
-package diff
+// Package parser 输入数据源
+package parser
 
 import "strings"
 

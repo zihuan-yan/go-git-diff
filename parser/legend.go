@@ -1,5 +1,5 @@
-// Package diff 图例
-package diff
+// Package parser 图例
+package parser
 
 import "strings"
 

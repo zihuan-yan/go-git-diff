@@ -1,5 +1,5 @@
-// Package diff 处理go语言git diff解析 `git diff source target`
-package diff
+// Package parser 处理go语言git diff解析 `git diff source target`
+package parser
 
 import (
 	"strings"

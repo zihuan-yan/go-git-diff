@@ -1,5 +1,5 @@
-// Package diff 元数据
-package diff
+// Package parser 元数据
+package parser
 
 import "strings"
 

@@ -1,5 +1,5 @@
-// Package diff diff块
-package diff
+// Package parser diff块
+package parser
 
 import (
 	"strings"
